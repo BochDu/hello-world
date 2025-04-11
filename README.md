@@ -2,6 +2,7 @@
 
 # 子仓库编译
 ```
+mkdir ./source/build
 cd ./source/build
 cmake ..
 cmake --build .
@@ -10,6 +11,7 @@ cmake --build .
 
 # demo.c编译
 ```
+mkdir ./build
 cd ./build
 cmake ..
 cmake --build .
