@@ -19,7 +19,7 @@ add_library(hello_world_product STATIC hello_world.c)
 # 将头文件目录添加到包含路径
 target_include_directories(hello_world_product PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
-# 搬运静态库到仓库根目录
+# 移除搬运静态库到仓库根目录的命令
 add_custom_command(TARGET hello_world_product POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy $<TARGET_FILE:hello_world_product> ${CMAKE_SOURCE_DIR}/../hello_world.a
 )
