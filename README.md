@@ -8,5 +8,6 @@ source - 源码
 
 ```
 cd ./source/build
-camke ..
+cmake ..
+cmake --build .
 ```
